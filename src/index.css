@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+    --nav-h: calc(5rem + env(safe-area-inset-bottom));
+}
+
+.root {
+    isolation: isolate;
+}
+
+body {
+    position: relative;
+    font-family: "Sora Variable";
+    font-weight: 400;
+    font-style: normal;
+}
+.poi-label {
+    white-space: nowrap; /* never wrap: the pill grows with the name */
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: white;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.25);
+    font-size: 14px;
+    font-weight: 600;
+}
